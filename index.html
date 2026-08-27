@@ -200,6 +200,16 @@ img{display:block;max-width:100%}
 .btn-line{background:var(--surface);border-color:var(--line);color:var(--ink)}
 .btn-line:hover{border-color:var(--ink);transform:translateY(-2px)}
 
+/* Op een telefoon werden de labels elk een eigen regel en stonden de knoppen
+   ongelijk onder elkaar, waardoor het eerste scherm onnodig lang werd.
+   Kleinere labels passen nu twee per regel, de knoppen krijgen gelijke breedte. */
+@media (max-width:560px){
+  .chips{gap:6px;margin-top:24px}
+  .chips li{font-size:.72rem;padding:5px 10px}
+  .actions{margin-top:26px;gap:8px}
+  .btn{width:100%;justify-content:center;padding:15px 20px}
+}
+
 /* ---------- generic section ---------- */
 .band{padding-block:clamp(60px,8vw,92px);border-bottom:1px solid var(--line)}
 .band-head{margin-bottom:clamp(34px,5vw,52px)}
@@ -384,9 +394,9 @@ img{display:block;max-width:100%}
         timmerwerk. Strak in het lood en op tijd opgeleverd.</p>
       <ul class="chips">
         <li>Metal-stud wanden</li>
-        <li>Glazen scheidingswanden</li>
+        <li>Glaswanden</li>
         <li>Systeemplafonds</li>
-        <li>Binnendeuren &amp; kozijnen</li>
+        <li>Binnendeuren</li>
         <li>Maatwerk kasten</li>
       </ul>
       <div class="actions">
